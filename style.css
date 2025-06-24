@@ -1,0 +1,38 @@
+
+
+@media screen and (max-width: 480px) {More actions
+
+    body {
+        background-color: #f0f0f0
+    }   
+
+    .titulo h1 {
+        font-family: "Knewave", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200%;
+    }
+
+    .titulo h3 {
+        font-family: "Meow Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 150%;
+    }
+
+    .titulo {
+        justify-items: center;
+        border-style: double;
+        border-radius: 8px;
+        border-color: black;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titulo hr {
+        width: 80%;
+    }
+
+}
+
