@@ -1,10 +1,10 @@
-
-
-@media screen and (max-width: 480px) {More actions
-
     body {
         background-color: #f0f0f0
     }   
+    
+    @media screen and (max-width: 480px) {More actions
+
+    
 
     .titulo h1 {
         font-family: "Knewave", system-ui;
@@ -25,13 +25,17 @@
         border-style: double;
         border-radius: 8px;
         border-color: black;
-        width: 60%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .titulo hr {
         width: 80%;
+    }
+
+    .esquerda {
+        display: flex;
     }
 
 }
