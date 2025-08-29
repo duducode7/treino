@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Meow+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>MEU</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Felipe - Projetos</title>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <div class="titulo">
-        <h1>Meu Web Site</h1>
-        <hr>
-        <h3>Olá me chamo Eduardo Felipe de Oliveira, tenho 17 anos</h3>
-    </div>
-    
-    <div class="esquerda">
-        <img src="imagens/IMG_2381 (1).HEIC">
-        <h3>Jogo futvôlei</h3>
-    </div>
+  <header class="perfil-header">
+    <p>Perfil - Eduardo Felipe<br>EF</p>
+  </header>
+
+  <main class="container">
+    <h1>Eduardo Felipe</h1>
+    <p class="subtitulo">Estudante de tecnologia | Futuro dev fullstack</p>
+
+    <button class="btn-me-conheca" type="button">Me conhece</button>
+    <input type="checkbox" aria-label="checkbox" />
+
+    <section class="sobre-mim">
+      <h2>Sobre mim</h2>
+      <p>
+        Olá! Meu nome é <strong>Eduardo</strong>. Sou um desenvolvedor front-end
+        apaixonado por tecnologia e estou em busca de crescer como profissional.
+      </p>
+      <div class="emojis" aria-label="emojis">
+        <span>🌍</span><span>💻</span><span>🎓</span>
+      </div>
+    </section>
+
+    <section class="projetos">
+      <h2>Projetos</h2>
+
+      <article class="projeto">
+        <a href="#" class="titulo-projeto">Projeto 1</a>
+        <span class="barra-projeto azul"></span>
+        <p class="ver-mais">
+          Descrição curta do projeto para contextualizar.
+        </p>
+        <button class="btn-mais" type="button">Ver mais</button>
+      </article>
+
+      <article class="projeto">
+        <a href="#" class="titulo-projeto">Projeto 2</a>
+        <span class="barra-projeto rosa"></span>
+        <p class="ver-mais">Uma breve descrição do segundo projeto.</p>
+        <button class="btn-mais" type="button">Ver mais</button>
+      </article>
+
+      <article class="projeto">
+        <a href="#" class="titulo-projeto">Projeto 3</a>
+        <span class="barra-projeto azul-claro"></span>
+        <p class="ver-mais">Outra descrição rápida do terceiro projeto.</p>
+        <button class="btn-mais" type="button">Ver mais</button>
+      </article>
+
+      <article class="projeto">
+        <a href="#" class="titulo-projeto">Vamos conversar?</a>
+        <span class="barra-projeto lilas"></span>
+        <p class="ver-mais">Detalhes rápidos sobre o contato.</p>
+        <button class="btn-mais" type="button">Ver mais</button>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
