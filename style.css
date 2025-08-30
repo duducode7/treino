@@ -1,7 +1,8 @@
-/* Reset básico (opcional) */
+/* Reset básico */
 * {
   box-sizing: border-box;
 }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,27 +10,32 @@ html, body {
   color: #111;
   background: #fff;
 }
+
 .container {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem 0 2rem;
 }
+
 .perfil-header p {
   font-family: "Times New Roman", serif;
   font-size: 14px;
   margin: 8px 0;
 }
+
 h1 {
   font-family: "Times New Roman", serif;
   font-size: 48px;
   margin: 8px 0 12px;
 }
+
 .subtitulo {
   font-size: 16px;
   color: #555;
   margin-bottom: 12px;
 }
+
 .btn-me-conheca {
   display: inline-block;
   padding: 6px 12px;
@@ -38,29 +44,34 @@ h1 {
   cursor: pointer;
   margin: 6px 0;
 }
-.sec-input {
-  display: block;
-  margin: 6px 0;
-}
-h2 {
+
+.sobre-mim h2, .projetos h2 {
   font-family: "Times New Roman", serif;
   font-size: 28px;
   margin: 20px 0 8px;
 }
+
 .sobre-mim p {
   line-height: 1.5;
 }
-.emojis span {
-  display: inline-block;
-  margin-right: 6px;
-  font-size: 20px;
-}
+
 .projetos {
   margin-top: 8px;
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;  /* Alinha os projetos verticalmente */
+  gap: 20px;  /* Espaçamento entre os projetos */
 }
+
+.flex {
+ display: flex;
+}
+
+.projeto {
+  display: block;
+  margin: 14px 0;
+  padding: 6px 0;
+}
+
 .titulo-projeto {
   display: inline-block;
   font-weight: bold;
@@ -69,10 +80,7 @@ h2 {
   text-decoration: none;
   padding: 6px 0;
 }
-.projeto {
-  margin: 14px 0;
-  padding: 6px 0;
-}
+
 .barra-projeto {
   display: block;
   height: 8px;
@@ -80,16 +88,29 @@ h2 {
   border-radius: 3px;
   margin: 6px 0 8px;
 }
-.barra-projeto.azul { background: #4aa3ff; }
-.barra-projeto.rosa { background: linear-gradient(90deg, #ff5eaa, #ffd6e9); }
-.barra-projeto.azul-claro { background: #92caff; }
-.barra-projeto.lilas { background: #c79aff; }
+
+.barra-projeto.azul {
+  background: #4aa3ff;
+}
+
+.barra-projeto.rosa {
+  background: linear-gradient(90deg, #ff5eaa, #ffd6e9);
+}
+
+.barra-projeto.azul-claro {
+  background: #92caff;
+}
+
+.barra-projeto.lilas {
+  background: #c79aff;
+}
 
 .ver-mais {
   margin: 6px 0 4px;
   color: #333;
   font-size: 14px;
 }
+
 .btn-mais {
   background: #f2f2f2;
   border: 1px solid #999;
