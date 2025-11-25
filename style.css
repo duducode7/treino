@@ -1,119 +1,141 @@
-/* Reset básico */
 * {
-  box-sizing: border-box;
-}
-
-html, body {
   margin: 0;
   padding: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #111;
-  background: #fff;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem 0 2rem;
-}
-
-.perfil-header p {
-  font-family: "Times New Roman", serif;
-  font-size: 14px;
-  margin: 8px 0;
-}
-
-h1 {
-  font-family: "Times New Roman", serif;
-  font-size: 48px;
-  margin: 8px 0 12px;
-}
-
-.subtitulo {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 12px;
-}
-
-.btn-me-conheca {
-  display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
-  cursor: pointer;
-  margin: 6px 0;
-}
-
-.sobre-mim h2, .projetos h2 {
-  font-family: "Times New Roman", serif;
-  font-size: 28px;
-  margin: 20px 0 8px;
-}
-
-.sobre-mim p {
-  line-height: 1.5;
-}
-
-.projetos {
-  margin-top: 8px;
+body {
+  background: #f0f0f0;
   display: flex;
-  flex-direction: column;  /* Alinha os projetos verticalmente */
-  gap: 20px;  /* Espaçamento entre os projetos */
+  justify-content: center;
+  padding: 40px 0;
 }
 
-.flex {
- display: flex;
+.layout {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  gap: 40px;
 }
 
-.projeto {
-  display: block;
-  margin: 14px 0;
-  padding: 6px 0;
+/* CARD LATERAL */
+.card {
+  width: 320px;
+  background: #f3ede7;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
 }
 
-.titulo-projeto {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 16px;
-  color: #0a0a0a;
-  text-decoration: none;
-  padding: 6px 0;
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 4px solid #0057ff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
-.barra-projeto {
-  display: block;
-  height: 8px;
+.foto img {
   width: 100%;
-  border-radius: 3px;
-  margin: 6px 0 8px;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 10%;  /* Ajusta a posição do rosto */
 }
 
-.barra-projeto.azul {
-  background: #4aa3ff;
+.nome {
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
-.barra-projeto.rosa {
-  background: linear-gradient(90deg, #ff5eaa, #ffd6e9);
+.cargo {
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.barra-projeto.azul-claro {
-  background: #92caff;
+.social a {
+  margin: 0 8px;
+  font-size: 20px;
 }
 
-.barra-projeto.lilas {
-  background: #c79aff;
+/* ÁREA PRINCIPAL */
+.conteudo {
+  flex: 1;
+  padding-right: 20px;
 }
 
-.ver-mais {
-  margin: 6px 0 4px;
-  color: #333;
-  font-size: 14px;
+.conteudo h1 {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.btn-mais {
-  background: #f2f2f2;
-  border: 1px solid #999;
-  padding: 4px 8px;
+.sub {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
   cursor: pointer;
 }
+
+.btn.ativo {
+  background: #0057ff;
+  color: #fff;
+}
+
+.descricao {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.projetos .titulo-sec {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.box h3 {
+  margin-bottom: 6px;
+}
+
+.btn-mini {
+  padding: 6px 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.secao {
+  display: none;
+}
+
+.secao.ativa {
+  display: block;
+}
+

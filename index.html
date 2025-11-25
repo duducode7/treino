@@ -4,68 +4,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eduardo Felipe - Projetos</title>
+  <title>Eduardo Felipe - Portfólio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="perfil-header">
-    <p>Perfil - Eduardo Felipe<br>EF</p>
-  </header>
+  <div class="layout">
 
-  <main class="container">
-    <h1>Eduardo Felipe de Oliveira</h1>
-    <p class="subtitulo">Estudante de tecnologia | Futuro dev fullstack</p>
+    <aside class="card">
+      <div class="foto">
+        <img src="imagens/foto-eduardo.png" alt="Foto de Eduardo Felipe">
+      </div>
+      <h2 class="nome">Eduardo Felipe</h2>
+      <p class="cargo">Estudante de Tecnologia</p>
 
-    <button class="btn-me-conheca" type="button">Me conhece</button>
+      <div class="social">
+        <a href="#">🌐</a>
+        <a href="#">💻</a>
+        <a href="#">📧</a>
+      </div>
+    </aside>
 
-    <section class="sobre-mim">
-      <h2>Sobre mim</h2>
-      <p>
-        Olá! Meu nome é <strong>Eduardo</strong>. Sou um desenvolvedor front-end
-        apaixonado por tecnologia e estou em busca de crescer como profissional.
+    <main class="conteudo">
+      <h1>Olá</h1>
+      <p class="sub">Meu perfil e meus projetos</p>
+
+
+
+      <p class="descricao">
+        Sou um apaixonado por tecnologia, sempre buscando aprender e crescer como desenvolvedor.
+        Aqui você encontra meu perfil, projetos e formas de contato.
+        Clique nos botões acima para navegar.
       </p>
-      <div class="emojis" aria-label="emojis">
-        <span>🌍</span><span>💻</span><span>🎓</span>
-      </div>
-    </section>
-
-    <section class="projetos">
-      <h2>Projetos</h2>
-      <div class="flex">
-        <article class="projeto">
-          <a href="#" class="titulo-projeto">Projeto 1</a>
-          <span class="barra-projeto azul"></span>
-          <p class="ver-mais">
-            Descrição curta do projeto para contextualizar.
-          </p>
-          <button class="btn-mais" type="button">Ver mais</button>
-        </article>
-
-        <article class="projeto">
-          <a href="#" class="titulo-projeto">Projeto 2</a>
-          <span class="barra-projeto rosa"></span>
-          <p class="ver-mais">Uma breve descrição do segundo projeto.</p>
-          <button class="btn-mais" type="button">Ver mais</button>
-        </article>
-
-        <article class="projeto">
-          <a href="#" class="titulo-projeto">Projeto 3</a>
-          <span class="barra-projeto azul-claro"></span>
-          <p class="ver-mais">Outra descrição rápida do terceiro projeto.</p>
-          <button class="btn-mais" type="button">Ver mais</button>
-        </article>
+      <div class="botoes">
+        <button class="btn ativo" data-target="projetos">Projetos</button>
+        <button class="btn" data-target="curriculo">Currículo</button>
       </div>
 
-        <article class="vms-conversar">
-          <a href="#" class="titulo-projeto">Vamos conversar?</a>
-          <span class="barra-projeto lilas"></span>
-          <p class="ver-mais">Detalhes rápidos sobre o contato.</p>
-          <button class="btn-mais" type="button">Ver mais</button>
-        </article>
-      
-    </section>
-  </main>
+      <section class="projetos">
+        <div id="projetos" class="secao ativa">
+          <h2 class="titulo-sec">Projetos</h2>
+          <div class="box">
+            <h3>Projeto 1</h3>
+            <p>Descrição curta do projeto.</p>
+            <button class="btn-mini">Ver mais</button>
+          </div>
+
+          <div class="box">
+            <h3>Projeto 2</h3>
+            <p>Uma breve descrição do segundo projeto.</p>
+            <button class="btn-mini">Ver mais</button>
+          </div>
+
+          <div class="box">
+            <h3>Projeto 3</h3>
+            <p>Outra descrição rápida do terceiro projeto.</p>
+            <button class="btn-mini">Ver mais</button>
+          </div>
+
+          <div class="box">
+            <h3>Vamos conversar?</h3>
+            <p>Detalhes rápidos sobre o contato.</p>
+            <button class="btn-mini">Ver mais</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="curriculo">
+        <div id="curriculo" class="secao">
+          <h2 class="titulo-sec">Currículo</h2>
+          <br><br>
+          <h3>Formação Acadêmica</h3>
+          <ul>
+            <li>Bacharelado em Ciência da Computação - Universidade XYZ (2022 - 2026)</li>
+          </ul>
+          <br><br>
+          <h3>Cursos e Certificações</h3>
+          <ul>
+            <li>Curso de Desenvolvimento Web - Alura</li>
+            <li>Certificação em JavaScript - Udemy</li>
+          </ul>
+          <br><br>
+          <h3>Habilidades Técnicas</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Git, GitHub</li>
+          </ul>
+          <br><br>
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Português (nativo)</li>
+            <li>Inglês (basicc)</li>
+          </ul>
+          <br><br>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Trabalho em equipe</li>
+            <li>Comunicação</li>
+            <li>Resolução de problemas</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
