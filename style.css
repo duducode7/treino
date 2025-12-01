@@ -22,6 +22,7 @@ body {
 /* CARD LATERAL */
 .card {
   width: 320px;
+  height: auto;
   background: #6f95ce;
   padding: 40px 30px;
   border-radius: 12px;
@@ -130,6 +131,11 @@ body {
   cursor: pointer;
 }
 
+.btn-mini a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .secao {
   display: none;
 }
@@ -138,3 +144,42 @@ body {
   display: block;
 }
 
+@media (max-width: 800px) {
+  .layout {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 8px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px 10px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .conteudo {
+    padding: 0;
+  }
+
+  .conteudo h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .sub, .descricao {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+
+  .projetos .titulo-sec {
+    text-align: center;
+  }
+}
